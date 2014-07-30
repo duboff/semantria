@@ -1,3 +1,13 @@
+[![Build Status](https://travis-ci.org/Integralist/Sinderella.png?branch=master)](https://travis-ci.org/Integralist/Sinderella) 
+
+[![Gem Version](https://badge.fury.io/rb/sinderella.png)](http://badge.fury.io/rb/sinderella)
+
+[![Coverage Status](https://coveralls.io/repos/Integralist/Sinderella/badge.png)](https://coveralls.io/r/Integralist/Sinderella)
+
+[![Dependency Status](https://gemnasium.com/duboff/semantria.svg)](https://gemnasium.com/duboff/semantria)
+
+[![Code Climate](https://codeclimate.com/github/duboff/semantria/badges/gpa.svg)](https://codeclimate.com/github/duboff/semantria)
+
 # Semantria
 
 TODO: Write a gem description
