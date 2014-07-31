@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mikhail Dubov"]
   spec.email         = ["mdubov@gmail.com"]
   spec.summary       = "A more natural ruby interface for the Semantria API"
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = "Allows interaction with the Semantria API"
   spec.homepage      = "http://github.com/duboff/semantria"
   spec.license       = "MIT"
 
@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry-remote"
   spec.add_development_dependency "pry-nav"
   spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "httparty"
 end

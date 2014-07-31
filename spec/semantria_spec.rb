@@ -1,7 +1,9 @@
 require 'spec_helper'
 
-describe Semantria do
-  it 'does stuff' do
-    pending # no code yet
+describe Semantria::Client do
+  context 'default attributes' do
+    it 'include httparty methods' do
+      # expect(described_class).to include HTTParty
+    end
   end
 end

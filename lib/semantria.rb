@@ -1,5 +1,8 @@
 require "semantria/version"
 
 module Semantria
-  # Your code goes here...
+  class Client
+    include HTTParty
+    base_uri 'http://api.dribbble.com'
+  end
 end
