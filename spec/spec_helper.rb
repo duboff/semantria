@@ -3,6 +3,8 @@ Coveralls.wear!
 
 require 'pry'
 require 'semantria'
+require 'semantria/auth'
+
 require 'webmock/rspec'
 require 'vcr'
 
