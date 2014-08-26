@@ -1,8 +1,6 @@
-[![Build Status](https://travis-ci.org/Integralist/Sinderella.png?branch=master)](https://travis-ci.org/Integralist/Sinderella) 
+[![Build Status](https://travis-ci.org/duboff/semantria.svg?branch=master)](https://travis-ci.org/Integralist/Sinderella) 
 
-[![Gem Version](https://badge.fury.io/rb/sinderella.png)](http://badge.fury.io/rb/sinderella)
-
-[![Coverage Status](https://coveralls.io/repos/Integralist/Sinderella/badge.png)](https://coveralls.io/r/Integralist/Sinderella)
+[![Coverage Status](https://img.shields.io/coveralls/duboff/semantria.svg)](https://coveralls.io/r/duboff/semantria?branch=master)
 
 [![Dependency Status](https://gemnasium.com/duboff/semantria.svg)](https://gemnasium.com/duboff/semantria)
 
@@ -10,7 +8,7 @@
 
 # Semantria
 
-TODO: Write a gem description
+The goal of this gem is to simplify interaction with Semantia API. Semantria have an official Ruby SDK which is currently more full (coverall all of the API) but is very hard to understand and use. This gem uses httparty to simplify the code. It should be easy to debug and improve.
 
 ## Installation
 
@@ -28,7 +26,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+client = Semantria::Client.new('key', 'secret')
+
+client.check_status # => 200
+
+client.queue_document('Here is some nice test') # => queue single document for analysis
+
+client.queue_batch(['Here is some nice test', 'And another one']) # => queue single document for analysis
+
+client.get_processed_documents
 
 ## Contributing
 
