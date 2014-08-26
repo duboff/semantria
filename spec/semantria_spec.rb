@@ -27,5 +27,22 @@ describe Semantria::Client do
       expect(described_class.new('bla', 'bla').headers).to be_a Hash
       expect(described_class.new('bla', 'bla').headers).not_to be_empty
     end
+    context 'authentication' do
+      before do
+        VCR.insert_cassette 'base', :record => :new_episodes
+      end
+
+      after do
+        VCR.eject_cassette
+      end
+
+      it 'authenticates' do
+        expect(described_class).to receive(:authenticate).and_return({})
+
+      end
+
+
+    end
+
   end
 end

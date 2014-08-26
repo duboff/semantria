@@ -6,22 +6,18 @@ describe Semantria::Authenticator do
 
     let(:auth) {described_class.new('bla', 'bla')}
 
-    it 'nonce is correct type' do
-      expect(auth.nonce).to be_a String
-      expect(auth.nonce.size).to eq 20
-    end
-
-    it 'has correct timestamp' do
-      expect(auth.timestamp).to be_a String
-    end
-
-    it 'generates correct paramter string' do
-      expect(auth.url_parameters).to eq "OAuthVersionKey=1.0&OAuthTimestampKey=#{auth.timestamp}&OAuthNonceKey=#{auth.nonce}&OAuthSignatureMethodKey=HMAC-SHA1&OAuthConsumerKeyKey=bla"
+    it 'generates correct parameters_hash' do
+      expect(auth.parameters_hash).to be_a Hash
+      expect(auth.parameters_hash["oauth_version"]).to eq '1.0'
+      expect(auth.parameters_hash["oauth_signature_method"]).to eq "HMAC-SHA1"
+      expect(auth.parameters_hash["oauth_consumer_key"]).to eq "bla"
     end
 
     it 'generates correct header' do
-      expect(auth).to receive(:signature).and_return('bla')
-      expect(auth.header).to eq 'OAuth realm=' + auth.url_parameters + "&OAuthSignatureKey=bla"
+      auth.uri = URI.parse("http://google.com")
+      expect(auth.headers).to be_a Hash
+      expect(auth.headers.size).to eq 1
+      expecr(auth.headers['Authorization']).to be_a String
     end
   end
 end
