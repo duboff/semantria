@@ -17,7 +17,7 @@ describe Semantria::Authenticator do
       auth.uri = URI.parse("http://google.com")
       expect(auth.headers).to be_a Hash
       expect(auth.headers.size).to eq 1
-      expecr(auth.headers['Authorization']).to be_a String
+      expect(auth.headers['Authorization']).to be_a String
     end
   end
 end
