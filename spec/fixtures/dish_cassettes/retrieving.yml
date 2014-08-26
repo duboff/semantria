@@ -1,0 +1,394 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=11802432798670104471&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096183&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"6626243718","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096183,oauth_nonce=11802432798670104471,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=6AafAr5P9CpZe3SSXry1WBy01l8%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:36:24 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:36:24 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=95626640063905324294&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096206&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"6286794667","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096206,oauth_nonce=95626640063905324294,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=vOCrFcgQOm3zra7qc%2BHJiyctj4k%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:36:47 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:36:47 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/processed.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=95626640063905324294&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096217&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096217,oauth_nonce=95626640063905324294,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=CdhP2b29OQj1DbAz3nDF7dS0s2Q%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:36:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '[{"language":"English","id":"3301665670","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"9233744728","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"9968781469","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"9727571367","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"3631545553","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"4700148152","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"5787567068","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"7661200327","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"6112815676","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"1082600758","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"0833974826","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"2441783669","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"2008335652","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"1595706957","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"0097832080","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"8098303290","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"8885341084","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"5802536984","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"4149871075","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"2636443027","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"9318570017","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"4037499173","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"4099385134","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"6626243718","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"1025219788","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"6820315231","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"7535192154","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"6286794667","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0}]'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:36:58 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=52330532721006176551&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096249&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"6349883801","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096249,oauth_nonce=52330532721006176551,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=R%2Blg%2B1dkfgmrj3NcMcONb7PGFYQ%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:37:30 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:37:30 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/processed.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=52330532721006176551&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096260&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096260,oauth_nonce=52330532721006176551,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=S5GttCGbJ4uVTQPUXK%2Fu1kVHsc8%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:37:41 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '[{"language":"English","id":"6349883801","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"2156903268","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"8410602726","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"4508823506","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0}]'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:37:41 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=13799322764603739150&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096341&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"2292809330","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096341,oauth_nonce=13799322764603739150,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=%2BUCblXIjhihIe%2Br8f2ECwinnaUA%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:39:01 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:39:01 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/processed.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=13799322764603739150&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096351&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096351,oauth_nonce=13799322764603739150,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=KpAoNaGO1Bzzf%2BZwL0GyAt2jE5M%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:39:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '[{"language":"English","id":"1881501295","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"1188927858","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"5693719583","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"2292809330","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0}]'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:39:12 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=82023826969444887733&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096381&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"7831440064","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096381,oauth_nonce=82023826969444887733,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=aCLA8qHl5qBf09JujCKRqw%2Fui7E%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:39:42 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:39:42 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/processed.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=82023826969444887733&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409096392&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409096392,oauth_nonce=82023826969444887733,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=IOVQbUwgB5Y2xnuvDcgj78Uvhok%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:39:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '[{"language":"English","id":"5360294719","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"5189639541","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0},{"language":"English","id":"0550518996","status":"PROCESSED","sentiment_score":0.0,"sentiment_polarity":"neutral","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"What
+        shithole","language_score":1.0},{"language":"English","id":"7831440064","status":"PROCESSED","themes":[{"sentiment_score":0.89,"strength_score":1.0,"title":"nice
+        restaurant","sentiment_polarity":"positive","evidence":4,"is_about":false}],"phrases":[{"type":"detected","sentiment_score":1.0680001,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":true,"intensifying_phrase":"Very"}],"auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.6236478,"title":"Fast-food_franchises"},{"type":"concept","strength_score":0.60825896,"title":"Restaurant_franchises"},{"type":"concept","strength_score":0.6076183,"title":"Theme_restaurants"},{"type":"concept","strength_score":0.6027079,"title":"Hamburger_restaurants"},{"type":"concept","strength_score":0.59943295,"title":"Fast_casual_restaurants"}],"strength_score":1.0,"title":"Food"}],"sentiment_score":1.0680001,"sentiment_polarity":"positive","topics":[{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5342962,"title":"Hotels","sentiment_polarity":"positive"},{"type":"concept","hitcount":0,"sentiment_score":1.0680001,"strength_score":0.5189895,"title":"Food","sentiment_polarity":"positive"}],"config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"Very
+        nice restaurant","language_score":1.0}]'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:39:53 GMT
+recorded_with: VCR 2.9.2
