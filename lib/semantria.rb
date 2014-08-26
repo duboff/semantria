@@ -24,13 +24,13 @@ module Semantria
     def queue_document(text)
       doc = {'id' => rand(10 ** 10).to_s.rjust(10, '0'), 'text' => text}
 
-      auth.uri = URI.parse('https://api35.semantria.com' + "/document")
+      auth.uri = URI.parse(self.base_uri + "/document")
       json = JSON.generate doc
       self.class.post("/document", verify: false, headers: auth.headers, query: auth.parameters_hash, body: json)
     end
 
     def queue_batch(batch)
-      auth.uri = URI.parse('https://api35.semantria.com' + "/document/batch")
+      auth.uri = URI.parse(self.base_uri + "/document/batch")
       batch = batch.map do |document|
         {'id' => rand(10 ** 10).to_s.rjust(10, '0'), 'text' => document}
       end
@@ -39,7 +39,7 @@ module Semantria
     end
 
     def get_processed_documents
-      auth.uri = URI.parse('https://api35.semantria.com' + "/document/processed.json")
+      auth.uri = URI.parse(self.base_uri + "/document/processed.json")
       self.class.get("/document/processed.json", verify: false, headers: auth.headers, query: auth.parameters_hash, body: nil)
     end
   end

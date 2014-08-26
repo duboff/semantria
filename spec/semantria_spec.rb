@@ -22,11 +22,6 @@ describe Semantria::Client do
       expect(described_class.new('bla', 'bla').auth).to be_a Semantria::Authenticator
     end
 
-
-    it 'has default headers' do
-      expect(described_class.new('bla', 'bla').headers).to be_a Hash
-      expect(described_class.new('bla', 'bla').headers).not_to be_empty
-    end
     context 'authentication' do
       before do
         VCR.insert_cassette 'base', :record => :new_episodes
@@ -37,7 +32,7 @@ describe Semantria::Client do
       end
 
       it 'authenticates' do
-        expect(described_class).to receive(:authenticate).and_return({})
+        expect(described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET']).check_status.code).to eq 200
 
       end
 

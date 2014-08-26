@@ -1,0 +1,233 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api35.semantria.com/status.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=75398756417873298710&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409094958&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409094958,oauth_nonce=75398756417873298710,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=THG1K64c7lPHNwsdMtvz6TNQI5k%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:15:59 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"api_version":"3.55","service_version":"3.5.5.732","service_status":"available","supported_encoding":"UTF-8","supported_compression":"gzip,deflate","supported_languages":["English","French","Spanish","Portuguese","German","Chinese","Italian","Korean"]}'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:15:59 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/status.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=92689271310039026359&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409094967&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409094967,oauth_nonce=92689271310039026359,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=TmJYUstOFFD4NYxZWsEBKDMqxKg%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:16:07 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"api_version":"3.55","service_version":"3.5.5.732","service_status":"available","supported_encoding":"UTF-8","supported_compression":"gzip,deflate","supported_languages":["English","French","Spanish","Portuguese","German","Chinese","Italian","Korean"]}'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:16:07 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/status.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=26584783281786362647&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409094973&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409094973,oauth_nonce=26584783281786362647,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=Gjv55X06%2Bt13KP%2FnJ%2Bcsn%2FSqss4%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:16:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"api_version":"3.55","service_version":"3.5.5.732","service_status":"available","supported_encoding":"UTF-8","supported_compression":"gzip,deflate","supported_languages":["English","French","Spanish","Portuguese","German","Chinese","Italian","Korean"]}'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:16:13 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/status.json?oauth_consumer_key=key&oauth_nonce=04884788028488627343&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409095002&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409095002,oauth_nonce=04884788028488627343,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=key,OAuth
+        realm=,oauth_signature=d4S%2BxQ1tMYpjSbnu%2FV2%2FgDrfLs0%3D
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:16:42 GMT
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: Authentication failed.
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:16:43 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/status.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=02430544894014414003&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409095032&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409095032,oauth_nonce=02430544894014414003,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=NPnVjmcoLb2rbGk5XHkwDTh30B0%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:17:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"api_version":"3.55","service_version":"3.5.5.732","service_status":"available","supported_encoding":"UTF-8","supported_compression":"gzip,deflate","supported_languages":["English","French","Spanish","Portuguese","German","Chinese","Italian","Korean"]}'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:17:13 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/status.json?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=04740007387324745318&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409095147&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409095147,oauth_nonce=04740007387324745318,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=58F1Ix%2BqAzl65PKIntKE5mmCE3c%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Tue, 26 Aug 2014 23:19:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"api_version":"3.55","service_version":"3.5.5.732","service_status":"available","supported_encoding":"UTF-8","supported_compression":"gzip,deflate","supported_languages":["English","French","Spanish","Portuguese","German","Chinese","Italian","Korean"]}'
+    http_version: 
+  recorded_at: Tue, 26 Aug 2014 23:19:08 GMT
+recorded_with: VCR 2.9.2
