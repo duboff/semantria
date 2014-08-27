@@ -19,5 +19,12 @@ describe Semantria::Authenticator do
       expect(auth.headers.size).to eq 1
       expect(auth.headers['Authorization']).to be_a String
     end
+    it 'generates correct path' do
+      allow(auth).to receive(:timestamp).and_return("1")
+      allow(auth).to receive(:nonce).and_return("2")
+
+      auth.uri = URI.parse("http://google.com")
+      expect(auth.path).to eq "/?oauth_version=1.0&oauth_timestamp=1&oauth_nonce=2&oauth_signature_method=HMAC-SHA1&oauth_consumer_key=bla"
+    end
   end
 end

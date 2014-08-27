@@ -807,4 +807,329 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Tue, 26 Aug 2014 23:39:41 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=09966529973295203247&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409097993&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"2142764881","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409097993,oauth_nonce=09966529973295203247,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=SIZBGvs4NqvwYFwa1YZxx3NUoq8%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:06:34 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:06:34 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document/batch?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=18451291410380152403&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409097994&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '[{"id":"0451794775","text":"Very nice restaurant"},{"id":"2762700198","text":"What
+        shithole"}]'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409097994,oauth_nonce=18451291410380152403,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=Ma3RanWbcP5r5kBt8%2BspdMkgSIo%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:06:34 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:06:35 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=51741583113888850160&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098014&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"4536233953","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098014,oauth_nonce=51741583113888850160,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=gxpYdS6PTexqG5qlzeGNPHyzdWM%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:06:54 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:06:55 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document/batch?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=60451561491382275253&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098015&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '[{"id":"5001682930","text":"Very nice restaurant"},{"id":"7821737705","text":"What
+        shithole"}]'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098015,oauth_nonce=60451561491382275253,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=cNsfmsUGSjQ%2B4FOp27p4LVrXR1M%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:06:55 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:06:55 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=98327615020725989669&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098336&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"2121598959","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098336,oauth_nonce=98327615020725989669,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=L%2BQZNTw3IIvKdz3khBC%2F%2BhaqET4%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:12:17 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:12:17 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document/batch?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=05053176371926559741&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098337&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '[{"id":"6450695145","text":"Very nice restaurant"},{"id":"3683338054","text":"What
+        shithole"}]'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098337,oauth_nonce=05053176371926559741,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=1ghQAZY9Hiyy45As%2BtSat4NraV0%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:12:17 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:12:18 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=95978414131540529385&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098419&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"1843629255","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098419,oauth_nonce=95978414131540529385,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=9PBxT%2Fvi0caLfroguczmw5HdvmM%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:13:39 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:13:39 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document/batch?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=66898130574448776386&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098419&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '[{"id":"3440085845","text":"Very nice restaurant"},{"id":"1786746021","text":"What
+        shithole"}]'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098419,oauth_nonce=66898130574448776386,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=kviC7JLOwAi6xKr1P6pdt7SEuLI%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:13:40 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:13:40 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=08190190281852049629&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098483&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"6385779393","text":"Very nice restaurant"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098483,oauth_nonce=08190190281852049629,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=4Daml7o1ywFzBEN%2F5RBlEe2Sx44%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:14:44 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:14:44 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document/batch?oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1&oauth_nonce=31139926100741487432&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1409098484&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '[{"id":"9773753406","text":"Very nice restaurant"},{"id":"9707690506","text":"What
+        shithole"}]'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1409098484,oauth_nonce=31139926100741487432,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9d205eae-9c7f-4442-92b0-c9aaef1f20e1,OAuth
+        realm=,oauth_signature=ZMH680gViNnmcosE66DgNi0rYWE%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Wed, 27 Aug 2014 00:14:45 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Aug 2014 00:14:45 GMT
 recorded_with: VCR 2.9.2
