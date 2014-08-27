@@ -33,7 +33,7 @@ client.check_status # => 200
 
 client.queue_document('Here is some nice test') # => queue single document for analysis
 
-client.queue_batch(['Here is some nice test', 'And another one']) # => queue single document for analysis
+client.queue_batch(['Here is some nice test', 'And another one']) # => queue an array of documents for analysis
 
 client.get_processed_documents
 
