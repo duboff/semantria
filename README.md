@@ -1,9 +1,6 @@
 [![Build Status](https://travis-ci.org/duboff/semantria.svg?branch=master)](https://travis-ci.org/Integralist/Sinderella) 
-
 [![Coverage Status](https://img.shields.io/coveralls/duboff/semantria.svg)](https://coveralls.io/r/duboff/semantria?branch=master)
-
 [![Dependency Status](https://gemnasium.com/duboff/semantria.svg)](https://gemnasium.com/duboff/semantria)
-
 [![Code Climate](https://codeclimate.com/github/duboff/semantria/badges/gpa.svg)](https://codeclimate.com/github/duboff/semantria)
 
 # Semantria
@@ -33,9 +30,10 @@ client.check_status # => 200
 
 client.queue_document('Here is some nice test') # => queue single document for analysis
 
-client.queue_batch(['Here is some nice test', 'And another one']) # => queue single document for analysis
+client.queue_batch(['Here is some nice test', 'And another one']) # => queue an array of documents for analysis
 
 client.get_processed_documents
+```
 
 ## Contributing
 
