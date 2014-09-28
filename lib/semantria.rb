@@ -21,8 +21,8 @@ module Semantria
       self.class.get("/status.json", verify: false, headers: auth.headers, query: auth.parameters_hash)
     end
 
-    def queue_document(text)
-      doc = {'id' => rand(10 ** 10).to_s.rjust(10, '0'), 'text' => text}
+    def queue_document(text, id=rand(10 ** 10).to_s)
+      doc = {'id' => id, 'text' => text}
 
       auth.uri = URI.parse(self.class.base_uri + "/document")
       json = JSON.generate doc
