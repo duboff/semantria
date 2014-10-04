@@ -31,8 +31,10 @@ describe Semantria::Client do
         VCR.eject_cassette
       end
 
-      it 'Returns correct response code on status check' do
-        expect(described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET']).check_status.code).to eq 200
+      VCR.use_cassette 'authentication' do
+        it 'Returns correct response code on status check' do
+          expect(described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET']).check_status.code).to eq 200
+        end
       end
     end
     context 'queueing documents' do
@@ -44,21 +46,23 @@ describe Semantria::Client do
         VCR.eject_cassette
       end
 
-      it 'successfully queues one document' do
-        client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
-        request = client.queue_document('Very nice restaurant')
-        expect(request.request.http_method).to eq Net::HTTP::Post
-        expect(request.response.code).to eq "202"
-      end
+      VCR.use_cassette 'queueing' do
+        it 'successfully queues one document' do
+          client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
+          request = client.queue_document('Very nice restaurant')
+          expect(request.request.http_method).to eq Net::HTTP::Post
+          expect(request.response.code).to eq "202"
+        end
 
-      it 'successfully queues batch of documents' do
-        client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
-        request = client.queue_batch(['Very nice restaurant', 'What shithole'])
-        expect(request.request.http_method).to eq Net::HTTP::Post
-        expect(request.response.code).to eq "202"
+        it 'successfully queues batch of documents' do
+          client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
+          request = client.queue_batch(['Very nice restaurant', 'What a shithole'])
+          expect(request.request.http_method).to eq Net::HTTP::Post
+          expect(request.response.code).to eq "202"
+        end
       end
     end
-    context 'retrieving document' do
+    context 'retrieving documents' do
       before do
         VCR.insert_cassette 'retrieving', :record => :new_episodes
       end
@@ -66,19 +70,33 @@ describe Semantria::Client do
       after do
         VCR.eject_cassette
       end
-      it 'successfully retrieves analysis for all queued documents' do
-        client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
-        request = client.queue_document('Very nice restaurant')
-        sleep(10)
-        expect(client.get_processed_documents.first["phrases"]).to_not be_empty
+
+      VCR.use_cassette 'retrieving' do
+        it 'successfully retrieves analysis for all queued documents' do
+          client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
+          request = client.queue_document('Very nice restaurant')
+          sleep(10)
+          expect(client.get_processed_documents.first["phrases"]).to_not be_empty
+        end   
+      end
+    end
+     context 'retrieving single document' do
+      before do
+        VCR.insert_cassette 'retrieving-single', :record => :new_episodes
       end
 
-      it 'successfully retrieves a single document based on id' do
-        client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
-        id = rand(10 ** 10).to_s
-        request = client.queue_document(id, 'Very nice restaurant')
-        sleep(10)
-        expect(client.get_document["phrases"]).to_not be_empty
+      after do
+        VCR.eject_cassette
+      end
+
+      VCR.use_cassette 'retrieving-single' do
+        it 'successfully retrieves a single document based on id' do
+          client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
+          id = rand(10 ** 10).to_s
+          request = client.queue_document('This is a nice single document', id)
+          sleep(10)
+          expect(client.get_document(id)["phrases"]).to_not be_empty
+        end
       end
     end
   end

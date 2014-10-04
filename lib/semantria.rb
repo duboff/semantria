@@ -42,5 +42,10 @@ module Semantria
       auth.uri = URI.parse(self.class.base_uri + "/document/processed.json")
       self.class.get("/document/processed.json", verify: false, headers: auth.headers, query: auth.parameters_hash, body: nil)
     end
+
+    def get_document(id)
+      auth.uri = URI.parse(self.class.base_uri + "/document/#{id}.json")
+      self.class.get("/document/#{id}.json", verify: false, headers: auth.headers, query: auth.parameters_hash, body: nil)
+    end
   end
 end

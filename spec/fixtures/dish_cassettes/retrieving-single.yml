@@ -1,0 +1,222 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5&oauth_nonce=44923476622891800381&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412442252&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"5776632478","text":"This is a nice single document"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1412442252,oauth_nonce=44923476622891800381,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5,OAuth
+        realm=,oauth_signature=C3BW1hUKBtbFGbKIjO7xrTgCax4%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Sat, 04 Oct 2014 17:04:13 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:04:13 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/5776632478.json?oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5&oauth_nonce=44923476622891800381&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412442263&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1412442263,oauth_nonce=44923476622891800381,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5,OAuth
+        realm=,oauth_signature=wN%2BxM1aAt5xZKELqJpM%2BzcNPZNI%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Sat, 04 Oct 2014 17:04:24 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"language":"English","id":"5776632478","status":"PROCESSED","themes":[{"sentiment_score":0.5,"strength_score":1.0,"title":"single
+        document","sentiment_polarity":"neutral","evidence":4,"is_about":true}],"phrases":[{"type":"detected","sentiment_score":0.5,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":false}],"summary":"This
+        is a nice single document... ","auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.5264832,"title":"Digital_press"}],"strength_score":0.4533226,"title":"Print_Media"}],"sentiment_score":0.5,"sentiment_polarity":"positive","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"This
+        is a nice single document","language_score":5.0}'
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:04:24 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5&oauth_nonce=12789237081999349697&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412442421&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"7150544533","text":"This is a nice single document"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1412442421,oauth_nonce=12789237081999349697,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5,OAuth
+        realm=,oauth_signature=qsYvfCXt%2Fm4kr0kgFLBjRyOrZv4%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Sat, 04 Oct 2014 17:07:03 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:07:03 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/7150544533.json?oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5&oauth_nonce=12789237081999349697&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412442433&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1412442433,oauth_nonce=12789237081999349697,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5,OAuth
+        realm=,oauth_signature=yWgfYQYP%2B17T854%2FeEoJ87WiI44%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Sat, 04 Oct 2014 17:07:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"language":"English","id":"7150544533","status":"PROCESSED","themes":[{"sentiment_score":0.5,"strength_score":1.0,"title":"single
+        document","sentiment_polarity":"neutral","evidence":4,"is_about":true}],"phrases":[{"type":"detected","sentiment_score":0.5,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":false}],"summary":"This
+        is a nice single document... ","auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.5264832,"title":"Digital_press"}],"strength_score":0.4533226,"title":"Print_Media"}],"sentiment_score":0.5,"sentiment_polarity":"positive","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"This
+        is a nice single document","language_score":5.0}'
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:07:13 GMT
+- request:
+    method: post
+    uri: https://api35.semantria.com/document?oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5&oauth_nonce=14270293623493587509&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412442567&oauth_version=1.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"465164566","text":"This is a nice single document"}'
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1412442567,oauth_nonce=14270293623493587509,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5,OAuth
+        realm=,oauth_signature=wo4x5JG4T01OTtludtLPzhh%2FsB4%3D
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Sat, 04 Oct 2014 17:09:28 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:09:28 GMT
+- request:
+    method: get
+    uri: https://api35.semantria.com/document/465164566.json?oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5&oauth_nonce=14270293623493587509&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1412442578&oauth_version=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - oauth_version=1.0,oauth_timestamp=1412442578,oauth_nonce=14270293623493587509,oauth_signature_method=HMAC-SHA1,oauth_consumer_key=9ca68ae2-c2f1-4eed-be4f-b93f2dfdedb5,OAuth
+        realm=,oauth_signature=A3ptbNrlEAeIY2pQh9OLTg8zQbs%3D
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.7
+      Date:
+      - Sat, 04 Oct 2014 17:09:39 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Language:
+      - en-US
+    body:
+      encoding: UTF-8
+      string: '{"language":"English","id":"465164566","status":"PROCESSED","themes":[{"sentiment_score":0.5,"strength_score":1.0,"title":"single
+        document","sentiment_polarity":"neutral","evidence":4,"is_about":true}],"phrases":[{"type":"detected","sentiment_score":0.5,"title":"nice","sentiment_polarity":"positive","is_negated":false,"is_intensified":false}],"summary":"This
+        is a nice single document... ","auto_categories":[{"type":"node","categories":[{"type":"concept","strength_score":0.5264832,"title":"Digital_press"}],"strength_score":0.4533226,"title":"Print_Media"}],"sentiment_score":0.5,"sentiment_polarity":"positive","config_id":"5a11ccd3-8b41-445b-974b-b7f7e2aca56b","source_text":"This
+        is a nice single document","language_score":5.0}'
+    http_version: 
+  recorded_at: Sat, 04 Oct 2014 17:09:39 GMT
+recorded_with: VCR 2.9.3
