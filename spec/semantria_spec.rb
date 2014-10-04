@@ -66,11 +66,19 @@ describe Semantria::Client do
       after do
         VCR.eject_cassette
       end
-      it 'successfully retrieves analysis' do
+      it 'successfully retrieves analysis for all queued documents' do
         client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
         request = client.queue_document('Very nice restaurant')
         sleep(10)
         expect(client.get_processed_documents.first["phrases"]).to_not be_empty
+      end
+
+      it 'successfully retrieves a single document based on id' do
+        client = described_class.new(ENV['SEMANTRIA_KEY'],ENV['SEMANTRIA_SECRET'])
+        id = rand(10 ** 10).to_s
+        request = client.queue_document(id, 'Very nice restaurant')
+        sleep(10)
+        expect(client.get_document["phrases"]).to_not be_empty
       end
     end
   end
