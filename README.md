@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/duboff/semantria.svg?branch=master)](https://travis-ci.org/Integralist/Sinderella) 
+[![Build Status](https://travis-ci.org/duboff/semantria.svg?branch=v0.0.3)](https://travis-ci.org/duboff/semantria)
 [![Coverage Status](https://img.shields.io/coveralls/duboff/semantria.svg)](https://coveralls.io/r/duboff/semantria?branch=master)
 [![Dependency Status](https://gemnasium.com/duboff/semantria.svg)](https://gemnasium.com/duboff/semantria)
 [![Code Climate](https://codeclimate.com/github/duboff/semantria/badges/gpa.svg)](https://codeclimate.com/github/duboff/semantria)
@@ -28,11 +28,13 @@ client = Semantria::Client.new('key', 'secret')
 
 client.check_status # => 200
 
-client.queue_document('Here is some nice test') # => queue single document for analysis
+client.queue_document('Here is some nice test', id) # => queue single document for analysis
 
 client.queue_batch(['Here is some nice test', 'And another one']) # => queue an array of documents for analysis
 
 client.get_processed_documents
+
+client.get_document(id) # => Get a single document by id (string of 10 digits)
 ```
 
 ## Contributing
